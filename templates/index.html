@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="{{ url_for('static',filename='/css/styles.css') }}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>SGPA Calculator- 4th Sem</title>
+   </head>
+   <body>
+      <div class="login-root">
+         <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+            
+            <div class="formbg-outer">
+               <div class="formbg">
+                  <div class="formbg-inner padding-horizontal--48">
+                     <h1>SGPA Calculator for 4th Sem CSE</h1>
+
+                     <span class="padding-bottom--15">Enter your grades</span>
+                     <form id='stripe-login' action="/submit" method="POST">
+                        <div class="field thisOnly padding-bottom">
+                           <label for="SEPM">Software engineering and Project Management</label>
+                           <select name="SEPM" id="SEPM">
+                              <option value="10">O</option>
+                              <option value="9">A+</option>
+                              <option value="8">A</option>
+                              <option value="7">B+</option>
+                              <option value="6">B</option>
+                              <option value="5">C</option>
+                              <option value="0">F</option>
+                           </select>
+                        </div>
+                        <div class="field thisOnly padding-bottom">
+                           <label for="APP">Advanced Programming Practices</label>
+                           <select name="APP" id="APP">
+                              <option value="10">O</option>
+                              <option value="9">A+</option>
+                              <option value="8">A</option>
+                              <option value="7">B+</option>
+                              <option value="6">B</option>
+                              <option value="5">C</option>
+                              <option value="0">F</option>
+                           </select>
+                        </div>
+                        <div class="field thisOnly padding-bottom">
+                           <label for="DAA">Design and Analysis of Algorithm</label>
+                           <select name="DAA" id="DAA">
+                              <option value="10">O</option>
+                              <option value="9">A+</option>
+                              <option value="8">A</option>
+                              <option value="7">B+</option>
+                              <option value="6">B</option>
+                              <option value="5">C</option>
+                              <option value="0">F</option>
+                           </select>
+                        </div>
+                        <div class="field thisOnly padding-bottom">
+                           <label for="MATH">Probability and Queueing Theory</label>
+                           <select name="MATH" id="MATH">
+                              <option value="10">O</option>
+                              <option value="9">A+</option>
+                              <option value="8">A</option>
+                              <option value="7">B+</option>
+                              <option value="6">B</option>
+                              <option value="5">C</option>
+                              <option value="0">F</option>
+                           </select>
+                        </div>
+                        <div class="field thisOnly padding-bottom">
+                           <label for="SE">Social Engineering</label>
+                           <select name="SE" id="SE">
+                              <option value="10">O</option>
+                              <option value="9">A+</option>
+                              <option value="8">A</option>
+                              <option value="7">B+</option>
+                              <option value="6">B</option>
+                              <option value="5">C</option>
+                              <option value="0">F</option>
+                           </select>
+                        </div>
+                        <div class="field thisOnly padding-bottom">
+                           <label for="OS">Operating System</label>
+                           <select name="OS" id="OS">
+                              <option value="10">O</option>
+                              <option value="9">A+</option>
+                              <option value="8">A</option>
+                              <option value="7">B+</option>
+                              <option value="6">B</option>
+                              <option value="5">C</option>
+                              <option value="0">F</option>
+                           </select>
+                        </div>
+                        <div  class="field thisOnly padding-bottom">
+                           <label for="CC">Computer Communication</label>
+                           <select name="CC" id="CC">
+                              <option value="10">O</option>
+                              <option value="9">A+</option>
+                              <option value="8">A</option>
+                              <option value="7">B+</option>
+                              <option value="6">B</option>
+                              <option value="5">C</option>
+                              <option value="0">F</option>
+                           </select>
+                        </div>
+                        <div  class="field thisOnly padding-bottom">
+                           <label for="CPS1">Competitive Professional Skills - I</label>
+                           <select name="CPS1" id="CPS1">
+                              <option value="10">O</option>
+                              <option value="9">A+</option>
+                              <option value="8">A</option>
+                              <option value="7">B+</option>
+                              <option value="6">B</option>
+                              <option value="5">C</option>
+                              <option value="0">F</option>
+                           </select>
+                        </div>
+                        <div class="field padding-bottom--24">
+                           <input type="submit" name="submit" value="Submit">
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="footer-link padding-top--24">
+                  <span>©Pankaj Bhattarai</span>
+                  <span><i class="fa fa-github"></i> Follow me on <a href="https://github.com/im-endangered" target="_blank">Github</a>
+                  </span>
+                  <span>Developed using Flask</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+   </body>
+</html>
