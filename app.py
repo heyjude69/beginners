@@ -17,15 +17,15 @@ def result(score):
 def submit():
     total_score=0
     if request.method=='POST':
-        sepm=request.form.get('SEPM')
-        app=request.form.get('APP')        
-        daa=request.form.get('DAA')        
-        math=request.form.get('MATH')        
-        se=request.form.get('SE')        
-        os=request.form.get('OS')        
-        cc=request.form.get('CC')    
-        cps1=request.form.get('CPS1')    
-    convertedGrade=[int(sepm),int(app),int(daa),int(math),int(se),int(os),int(cc),int(cps1)]
+        cn=request.form.get('CN')
+        ebs=request.form.get('EBS')        
+        dme=request.form.get('DME')        
+        eds=request.form.get('EDS')        
+        fla=request.form.get('FLA')        
+        efs=request.form.get('EFS')        
+        cps2=request.form.get('CPS2')    
+        msit=request.form.get('MSIT')    
+    convertedGrade=[int(cn),int(ebs),int(dme),int(eds),int(fla),int(efs),int(cps2),int(msit)]
     sgpa=(convertedGrade[0]*4+convertedGrade[1]*4+convertedGrade[2] *4+convertedGrade[3]*4 +convertedGrade[4] *2 +convertedGrade[5] *4 +convertedGrade[6] *3 +convertedGrade[7]*1)/26   
     return redirect(url_for('result',score=sgpa))
     # return convertedGrade
