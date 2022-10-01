@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="{{ url_for('static',filename='/css/styles.css') }}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>SGPA Calculator- 5th Sem</title>
    </head>
@@ -20,8 +20,8 @@
                      <span class="padding-bottom--15">Enter your grades</span>
                      <form id='stripe-login' action="/submit" method="POST">
                         <div class="field thisOnly padding-bottom">
-                           <label for="SEPM">Software engineering and Project Management</label>
-                           <select name="SEPM" id="SEPM">
+                           <label for="CN">Computer Networks</label>
+                           <select name="CN" id="CN">
                               <option value="10">O</option>
                               <option value="9">A+</option>
                               <option value="8">A</option>
@@ -32,8 +32,8 @@
                            </select>
                         </div>
                         <div class="field thisOnly padding-bottom">
-                           <label for="APP">Advanced Programming Practices</label>
-                           <select name="APP" id="APP">
+                           <label for="EBS">Professional Elective- B slot</label>
+                           <select name="EBS" id="EBS">
                               <option value="10">O</option>
                               <option value="9">A+</option>
                               <option value="8">A</option>
@@ -44,8 +44,8 @@
                            </select>
                         </div>
                         <div class="field thisOnly padding-bottom">
-                           <label for="DAA">Design and Analysis of Algorithm</label>
-                           <select name="DAA" id="DAA">
+                           <label for="DME">Discrete Mathematics for Engineers</label>
+                           <select name="DME" id="DME">
                               <option value="10">O</option>
                               <option value="9">A+</option>
                               <option value="8">A</option>
@@ -56,8 +56,8 @@
                            </select>
                         </div>
                         <div class="field thisOnly padding-bottom">
-                           <label for="MATH">Probability and Queueing Theory</label>
-                           <select name="MATH" id="MATH">
+                           <label for="EDS">Professional Elective- D slot</label>
+                           <select name="EDS" id="EDS">
                               <option value="10">O</option>
                               <option value="9">A+</option>
                               <option value="8">A</option>
@@ -68,8 +68,8 @@
                            </select>
                         </div>
                         <div class="field thisOnly padding-bottom">
-                           <label for="SE">Social Engineering</label>
-                           <select name="SE" id="SE">
+                           <label for="FLA">Formal Language and Automata</label>
+                           <select name="FLA" id="FLA">
                               <option value="10">O</option>
                               <option value="9">A+</option>
                               <option value="8">A</option>
@@ -80,8 +80,8 @@
                            </select>
                         </div>
                         <div class="field thisOnly padding-bottom">
-                           <label for="OS">Operating System</label>
-                           <select name="OS" id="OS">
+                           <label for="EFS">Open Elective- F slot</label>
+                           <select name="EFS" id="EFS">
                               <option value="10">O</option>
                               <option value="9">A+</option>
                               <option value="8">A</option>
@@ -92,8 +92,8 @@
                            </select>
                         </div>
                         <div  class="field thisOnly padding-bottom">
-                           <label for="CC">Computer Communication</label>
-                           <select name="CC" id="CC">
+                           <label for="CPS2">Competitive Professional Skills - II</label>
+                           <select name="CPS2" id="CPS2">
                               <option value="10">O</option>
                               <option value="9">A+</option>
                               <option value="8">A</option>
@@ -104,8 +104,8 @@
                            </select>
                         </div>
                         <div  class="field thisOnly padding-bottom">
-                           <label for="CPS1">Competitive Professional Skills - I</label>
-                           <select name="CPS1" id="CPS1">
+                           <label for="MSIT">MOOC/Seminar/Industrial Training</label>
+                           <select name="MSIT" id="MSIT">
                               <option value="10">O</option>
                               <option value="9">A+</option>
                               <option value="8">A</option>
