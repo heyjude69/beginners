@@ -26,7 +26,7 @@ def submit():
         cps2=request.form.get('CPS2')    
         msit=request.form.get('MSIT')    
     convertedGrade=[int(cn),int(ebs),int(dme),int(eds),int(fla),int(efs),int(cps2),int(msit)]
-    sgpa=(convertedGrade[0]*4+convertedGrade[1]*4+convertedGrade[2] *4+convertedGrade[3]*4 +convertedGrade[4] *2 +convertedGrade[5] *4 +convertedGrade[6] *3 +convertedGrade[7]*1)/26   
+    sgpa=(convertedGrade[0]*4+convertedGrade[1]*3+convertedGrade[2] *4+convertedGrade[3]*3 +convertedGrade[4] *3+convertedGrade[5] *3 +convertedGrade[6] *1 +convertedGrade[7]*1)/22   
     return redirect(url_for('result',score=sgpa))
     # return convertedGrade
     
