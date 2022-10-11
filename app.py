@@ -8,7 +8,7 @@ def welcome():
 
 @app.route('/result/<float:score>')
 def result(score):    
-    cgpa= "{:.2f}".format(score)
+    cgpa= "{:.3f}".format(score)
     
     return render_template('result.html',cgpa=cgpa)
         
